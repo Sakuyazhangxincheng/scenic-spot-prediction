@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "北交新闻",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "backgroundColor": "#efefef",
+  "onReachBottomDistance": 100
+}

@@ -1,0 +1,21 @@
+<!--pages/home/home.wxml-->
+<!-- 导航栏 -->
+<view class="container">
+  <scroll-view scroll-x class="navbar" scroll-with-animation scroll-left="{{scrollLeft}}rpx">
+  <view class="nav-item" wx:for="{{tabs}}" wx:key="id" bindtap="tabSelect" data-id="{{index}}">
+    <view class="nav-text {{index==tabCur?'tab-on':''}}">{{item.name}}</view>
+  </view>
+</scroll-view>
+<view wx:for="{{show}}" wx:key="index">
+ <view class="item">
+  <image class="img" src="{{item.imgsrc}}" mode="scaleToFill"></image>
+  <view class="number-wrapper">
+   <text class="name">{{item.title}}</text>
+   <view class="count-wrapper">
+    <text class="count">{{item.ptime}}</text>
+   </view>
+  </view>
+ </view>
+</view>
+</view>
+
